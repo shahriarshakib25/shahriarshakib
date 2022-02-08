@@ -1,0 +1,183 @@
+/*==============================================================*/
+@media screen and (max-width: 1200px){
+.row{
+    width: 80%;
+    margin: auto;
+}
+
+.intro{
+    font-size: 250%;
+    margin: 0% 0 2% 0;
+}
+.description{
+    width: 100%;
+}
+}
+/*==============================================================*/
+@media screen and (max-width: 1024px){
+    .grid-about-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 50px;
+        box-sizing: border-box;
+    }
+    .intro{
+    line-height: 1.2;
+} 
+}
+/*==============================================================*/
+@media screen and (max-width: 864px){
+    .grid-about-container{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 50px;
+        box-sizing: border-box;
+    }
+    .intro{
+        line-height: 1.2;
+    } 
+    .grid-contact-container{
+        grid-template-columns: 1fr;
+    }
+    }
+
+/*==============================================================*/
+@media screen and (max-width: 768px){
+
+.hero-text-box h1{
+    font-family: 'Roboto',sans-serif;
+    font-size: 500%;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #E51AAA;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.hero-text-box span{
+    font-family: 'Roboto',sans-serif;
+    font-size: 180%;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+.btn:link, .btn:visited, .btn {
+    margin-bottom: 0%;
+    padding: 5px 40px;
+    font-size: 160%;
+  }
+
+Section{
+    padding: 80px 0;
+}
+.section-title p {
+    margin: 5px 0 50px 0;
+    font-size: 160%;
+  }
+
+.grid-process-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.job span {
+    font-size: 130%;
+  }
+.education span {
+    font-size: 130%;
+}
+.grid-testimonial-items p {
+    font-size: 150%;
+  }
+.signature {
+    width: 170px;
+}
+.grid-testimonial-items h5 {
+    font-size: 220%;
+  }
+.grid-testimonial-items span {
+    font-size: 150%;
+}
+.grid-contact-items h3 {
+    font-size: 220%;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+.nested-grid-contact-items h3 {
+    font-size: 180%;
+    font-weight: 500;
+}
+.nested-grid-contact-items p {
+    font-size: 150%;
+}
+
+.single-form-btn input {
+    font-size: 150%;
+    padding: 5px 40px;
+}
+}
+/*==============================================================*/
+@media screen and (max-width: 480px){
+    .row{
+        width: 90%;
+    }
+    .nav-icon ion-icon{
+        font-size: 30px;
+    }
+    .nav-icon{
+        margin-top: 35px;
+    }
+    .nav-icon ion-icon:hover{
+        font-size: 30px;
+    }
+    .hero-text-box h1{
+        font-size: 400%;
+        font-weight: 600;
+    }
+    .hero-text-box h1:hover{
+        color: #ffffff;
+    }
+    .grid-about-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 50px;
+        text-align: center;
+    }
+    .shahriar{
+        width: 80%;
+    }
+    .intro{
+        margin-left: 40px ;
+        margin-bottom: 20px;
+        text-align: left;
+        border-left: 5px solid #cfcdcf;
+    }
+    .description{
+        font-size: 150%;
+        text-align: center justify;
+        color: rgb(82, 81, 81);
+        margin-bottom: 40px;
+    }
+    .grid-experiences-container{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 40px;
+    }
+    .grid-protfolio-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-testimonial-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid-contact-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+    #fotter{
+        padding: 100px 0;
+    }
+}

@@ -1,0 +1,493 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
+/* ============================================================
+                        Common CSS
+============================================================= */ 
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    box-sizing: border-box;
+    font-weight: 400;
+    line-height: 1.5;
+    font-family: 'Roboto',sans-serif;
+}
+#hero{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.877)), url(../img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(31% 0, 100% 0, 100% 100%, 0 88%, 0 0);
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+h4{
+    font-size: 200%;
+    font-weight: 600;
+    color: #fff;
+}
+
+ul li{
+    list-style: none;
+}
+/* ============================================================
+                        Reuseble Component
+============================================================= */ 
+.row{
+    width: 70%;
+    margin: auto;
+}
+Section{
+    padding: 120px 0;
+}
+/* ============================================================
+                        Header
+============================================================= */
+
+.logo{
+    width: 70px;
+    margin-top: 20px;
+    float: left;
+}
+.nav-icon{
+    float: right;
+    margin-top: 25px;
+}
+.nav-icon ion-icon{
+    font-size: 40px;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.nav-icon ion-icon:hover{
+    font-size: 40px;
+    color: #E51AAA;
+    border: 1px solid #E51AAA;
+}
+.hero-text-box{
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-text-box h1{
+    font-family: 'Roboto',sans-serif;
+    font-size: 650%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #E51AAA;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.hero-text-box h1:hover{
+    color: #FFD166;
+}
+.hero-text-box h1::before{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+
+.hero-text-box h1::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #fff;
+}
+.hero-text-box span{
+    font-family: 'Roboto',sans-serif;
+    font-size: 250%;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    display: block;
+    margin-top: 30px;
+}
+
+
+/* ============================================================
+                        About Section
+============================================================= */
+
+.grid-about-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+    box-sizing: border-box;
+}
+.shahriar{
+    width: 100%;
+    border-radius: 10px;
+
+}
+.intro{
+    font-size: 300%;
+    font-weight: 600;
+    margin: 5% 0 2% 0;
+}
+.description{
+    font-size: 180%;
+    text-align: justify;
+    color: rgb(82, 81, 81);
+    width: 90%;
+}
+.btn:link,
+.btn:visited,
+.btn{
+    padding: 5px 50px;
+    background: #110A36;
+    color: #fff;
+    font-size: 180%;
+    text-align: center;
+    margin-top: 5%;
+    display: inline-block;
+    transition: 0.23s;
+    cursor: pointer;
+}
+.btn:hover,
+.btn:active{
+    background: #E51AAA;
+    color: rgb(255, 255, 255);
+}
+
+/* ============================================================
+                        Process Section
+============================================================= */
+#process{
+    background: #F6F6F6;
+    clip-path: polygon(0 0, 100% 12%, 100% 100%, 0 100%);
+}
+.section-title h2{
+    font-size: 300%;
+    font-weight: 600;
+    text-align: center;
+}
+.section-title p{
+    font-size: 180%;
+    font-weight: 400;
+    text-align: center;
+    color: rgb(82, 81, 81);
+    margin: 5px 0 80px 0;
+}
+.grid-process-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+.grid-process-items{
+    background-color: #110A36;
+    text-align: center;
+    color: #fff;
+    padding: 30px 0;
+    border-radius: 10px;
+}
+.grid-process-items:hover{
+    background: #190c5a;
+}
+.grid-process-items ion-icon{
+    font-size: 700%;
+    margin-bottom: 30px;
+    color:  #fff;
+}
+/* ============================================================
+                        Experiences
+============================================================= */
+#experiences{
+    background-image: url(..//img/experiencesbackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.grid-experiences-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+.grid-experiences-items{
+    background: rgba(0, 0, 0, 0.774);
+    padding: 35px 45px;
+}
+.grid-experiences-items h3{
+    font-size: 250%;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #E51AAA;
+}
+.job h5{
+    font-size: 180%;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.job p{
+    font-size: 160%;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.job span{
+    font-size: 160%;
+    text-align: justify;
+    display: block;
+    margin: 10px 0 0px 0 ;
+    color: #fff;
+}
+.grid-experiences-items hr{
+    border: 0;
+    border-bottom: 1px solid #fff;
+    margin: 40px 0;
+}
+
+.education h5{
+    font-size: 180%;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.education p{
+    font-size: 160%;
+    font-weight: 400;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.education span{
+    font-size: 160%;
+    text-align: justify;
+    display: block;
+    margin: 10px 0 0px 0 ;
+    color: #fff;
+}
+
+/* ============================================================
+                        Prothfolio
+============================================================= */
+
+.grid-protfolio-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(250px, auto);
+}
+.grid-protfolio-items:nth-child(1){
+    background: url(../img/protfolio\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-protfolio-items:nth-child(2){
+    background: url(../img/protfolio\ \(2\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-protfolio-items:nth-child(3){
+    background: url(../img/protfolio\ \(3\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-protfolio-items:nth-child(4){
+    background: url(../img/protfolio\ \(4\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.grid-protfolio-items:nth-child(5){
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background: url(../img/protfolio\ \(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-protfolio-items:nth-child(6){
+    background: url(../img/protfolio\ \(6\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.grid-protfolio-items:nth-child(7){
+    background: url(../img/protfolio\ \(7\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ============================================================
+                        Testimonial
+============================================================= */
+#testimonial{
+    background: url(../img/leptop.jpg) center / cover;
+    background-repeat: no-repeat;
+}
+
+.grid-testimonial-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-testimonial-items{
+    background: linear-gradient( black,rgba(0, 0, 0, 0));
+    padding: 45px 30px;
+}
+.quote{
+    width: 70px;
+    margin-bottom: 40px;
+}
+.grid-testimonial-items p{
+    color: #fff;
+    font-size: 180%;
+    margin-bottom: 60px;
+}
+.signature{
+    width: 220px;
+    margin-bottom: 15px;
+}
+.grid-testimonial-items h5{
+    color: #fff;
+    font-size: 250%;
+}
+.grid-testimonial-items span{
+    color: #fff;
+    font-size: 180%;
+}
+
+/* ============================================================
+                        Contact
+============================================================= */
+#contact{
+    background: url(../img/contact.jpg) no-repeat center / cover;
+}
+.grid-contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+.grid-contact-items h3{
+    font-size: 250%;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.grid-contact-items:nth-child(1){
+    background: hsla(0, 0%, 0%, 0.801);
+    padding: 45px 30px;
+}
+.single-form input[type="text"],
+.single-form input[type="email"],
+.single-form textarea{
+    width: 100%;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+    font-size: 150%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+.single-form-btn{
+    text-align: right;
+    cursor: pointer;
+}
+.single-form-btn input {
+    font-size: 180%;
+    padding: 5px 50px;
+    border: none;
+    background: #ffffff;
+    color: #110A36;
+    display: inline-block;
+}
+.single-form-btn input:hover{
+    background: #E51AAA;
+    color: #ffffff;
+}
+.nested-grid-contact-container{
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-row-gap: 10px;
+}
+.nested-grid-contact-items{
+    background: hsla(0, 0%, 0%, 0.801);
+    padding: 45px 30px;
+}
+.nested-grid-contact-items h3{
+    padding: 0;
+    margin: 0 0 0 0;
+    font-weight: 500;
+}
+.nested-grid-contact-items hr{
+    border: 1px solid #C2C4C6;
+    margin: 5px 0 10px 0;
+}
+.nested-grid-contact-items p{
+    font-size: 180%;
+    font-weight: 400;
+    color: #C2C4C6;
+    margin: 0;
+}
+/* ============================================================
+                        Footer
+============================================================= */
+#fotter{
+    background: #110A36;
+    padding: 60px 0;
+    text-align: center;
+}
+.social-icon{
+    margin-bottom: 20px;
+}
+.social-icon ul li{
+    display: inline-block;
+}
+.social-icon ul li a ion-icon{
+    color: #fff;
+    border-right: 1px solid #fff;
+    font-size: 200%;
+    padding: 0 20px;
+}
+.social-icon ul li:hover a ion-icon{
+    color: #E51AAA;
+}
+.copyright{
+    font-size: 150%;
+    color: #fff;
+}
+.copyright a{
+    font-size: 120%;
+    color: #E51AAA;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.totop{
+    margin-top: 25px;
+}
+.totop .uk-totop{
+    padding: 5px;
+    color: #ffffff;
+    transition:.1s ease-in-out;
+    border: 1px solid #ffffff;
+}
+.totop .uk-totop:hover{
+    padding: 5px;
+    background-color: #E51AAA;
+    color: #ffffff;
+    transition:.1s ease-in-out;
+    border: 1px solid #E51AAA;
+}
